@@ -1,0 +1,111 @@
+@define-color base #3b2f31;
+@define-color text #eadddd;
+@define-color border #5e5052;
+@define-color accent #7fa68f;
+
+/* ======================
+   RESET
+   ====================== */
+
+window * {
+    all: unset;
+    color: @text;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* ======================
+   WINDOW CONTAINER
+   ====================== */
+
+window .box-wrapper {
+    border-radius: 0;
+    padding: 1px;
+    margin: 0;
+}
+
+/* ======================
+   SEARCH
+   ====================== */
+
+window .search-container {
+    border-bottom: 1px solid @border;
+    padding: 2px 6px;
+    margin: 0;
+}
+
+window .input {
+    background: transparent;
+    color: @text;
+}
+
+/* ======================
+   REMOVE ICONS
+   ====================== */
+
+window .normal-icons,
+window .large-icons,
+window .item-image,
+window .symbols {
+    -gtk-icon-size: 0px;
+    min-width: 0;
+    min-height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+/* ======================
+   ULTRA COMPACT ROWS
+   ====================== */
+
+child {
+    padding: 1px 4px;
+    margin: 0;
+    min-height: 8px;
+}
+
+/* Tight inner box */
+child .item-box {
+    spacing: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Text styling */
+child .item-box label {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+/* ======================
+   SELECTION
+   ====================== */
+
+child:selected {
+    background: alpha(@accent, 0.44);
+}
+
+/* Remove animation shift */
+child:selected .item-box {
+    transform: none;
+}
+
+/* ======================
+   PREVIEW (minimal)
+   ====================== */
+
+window .preview {
+    border-top: 1px solid @border;
+    background: transparent;
+    padding: 6px;
+    margin: 0;
+    line-height: 1.2em;
+}

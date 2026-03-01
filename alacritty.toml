@@ -1,0 +1,38 @@
+# ─────────────────────────────
+# Alacritty Theme — Terramour
+# Cozy • Clean • Moody
+# ─────────────────────────────
+
+[colors]
+
+[colors.primary]
+background = "#3b2f31"
+foreground = "#eadddd"
+
+[colors.normal]
+black   = "#3b2f31"
+red     = "#d07a7a"
+green   = "#7fa68f"
+yellow  = "#d6c37a"
+blue    = "#8fa3d1"
+magenta = "#b08fd1"
+cyan    = "#79a6a3"
+white   = "#eadddd"
+
+[colors.bright]
+black   = "#9c8c8d"
+red     = "#dc8888"
+green   = "#8fb298"
+yellow  = "#e1cf8a"
+blue    = "#9fb3df"
+magenta = "#bc9cde"
+cyan    = "#88b3b0"
+white   = "#ffffff"
+
+[colors.cursor]
+text   = "#3b2f31"
+cursor = "#eadddd"
+
+[colors.selection]
+text       = "#3b2f31"
+background = "#b8a9a9"

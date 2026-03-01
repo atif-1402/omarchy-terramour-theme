@@ -1,0 +1,196 @@
+/* ─────────────────────────────
+   GTK Theme — Terramour
+   Cozy • Clean • Moody
+   ───────────────────────────── */
+
+@define-color background        #3b2f31;
+@define-color foreground        #eadddd;
+
+/* Core palette */
+@define-color black             #3b2f31;
+@define-color red               #d07a7a;
+@define-color green             #7fa68f;
+@define-color yellow            #d6c37a;
+@define-color blue              #8fa3d1;
+@define-color magenta           #b08fd1;
+@define-color cyan              #79a6a3;
+@define-color white             #eadddd;
+
+/* Subtle brights */
+@define-color bright_black      #8f7f80;
+@define-color bright_red        #dc8888;
+@define-color bright_green      #8fb298;
+@define-color bright_yellow     #e1cf8a;
+@define-color bright_blue       #9fb3df;
+@define-color bright_magenta    #bc9cde;
+@define-color bright_cyan       #88b3b0;
+@define-color bright_white      #ffffff;
+
+/* Accent */
+@define-color accent_bg_color   #7fa68f;
+@define-color accent_fg_color   #3b2f31;
+@define-color accent_color      #7fa68f;
+
+/* Window */
+@define-color window_bg_color   #3b2f31;
+@define-color window_fg_color   #eadddd;
+
+/* Views */
+@define-color view_bg_color     #443739;
+@define-color view_fg_color     #eadddd;
+
+/* Sidebar */
+@define-color sidebar_bg_color  #443739;
+@define-color sidebar_fg_color  #eadddd;
+@define-color sidebar_backdrop_color #3b2f31;
+@define-color sidebar_shade_color    #33292b;
+
+/* Headerbar */
+@define-color headerbar_bg_color     #443739;
+@define-color headerbar_fg_color     #eadddd;
+@define-color headerbar_backdrop_color #3b2f31;
+@define-color headerbar_shade_color    #33292b;
+
+/* Cards / Popovers */
+@define-color card_bg_color      #443739;
+@define-color card_fg_color      #eadddd;
+
+@define-color popover_bg_color   #4f4143;
+@define-color popover_fg_color   #eadddd;
+
+/* States */
+@define-color destructive_bg_color @red;
+@define-color destructive_fg_color #ffffff;
+
+@define-color success_bg_color   @green;
+@define-color success_fg_color   #3b2f31;
+
+@define-color warning_bg_color   @yellow;
+@define-color warning_fg_color   #3b2f31;
+
+@define-color error_bg_color     @red;
+@define-color error_fg_color     #ffffff;
+
+/* Dialog */
+@define-color dialog_bg_color    #3b2f31;
+@define-color dialog_fg_color    #eadddd;
+
+/* Borders */
+@define-color borders            #8f7f80;
+
+/* Theme aliases */
+@define-color theme_fg_color     @foreground;
+@define-color theme_text_color   @foreground;
+@define-color theme_bg_color     @background;
+@define-color theme_base_color   #443739;
+
+@define-color theme_selected_bg_color  #7fa68f;
+@define-color theme_selected_fg_color  #3b2f31;
+
+@define-color insensitive_bg_color     #3b2f31;
+@define-color insensitive_fg_color     #8f7f80;
+@define-color insensitive_base_color   #443739;
+
+@define-color theme_unfocused_fg_color @foreground;
+@define-color theme_unfocused_text_color @foreground;
+@define-color theme_unfocused_bg_color @background;
+@define-color theme_unfocused_base_color #443739;
+@define-color theme_unfocused_selected_bg_color #443739;
+@define-color theme_unfocused_selected_fg_color #eadddd;
+
+@define-color unfocused_insensitive_color #8f7f80;
+@define-color unfocused_borders #8f7f80;
+
+@define-color warning_color @yellow;
+@define-color error_color @red;
+@define-color success_color @green;
+@define-color destructive_color @red;
+
+@define-color content_view_bg  #443739;
+@define-color text_view_bg     #4f4143;
+
+messagedialog {
+    background-color: @dialog_bg_color;
+}
+
+    messagedialog {
+        background-color: @dialog_bg_color;
+    }
+
+    messagedialog label {
+        color: @dialog_fg_color;
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    messagedialog .secondary-text {
+        font-size: 10pt;
+        font-style: italic;
+    }
+
+    messagedialog button {
+        background-color: @black;
+        color: @foreground;
+        border: 1px solid @bright_black;
+        padding: 10px;
+    }
+
+    messagedialog button:hover {
+        background-color: @blue;
+    }
+
+    banner revealer widget {
+        background: @bright_black;
+        padding: 5px;
+        color: @foreground;
+    }
+
+    alertdialog.background {
+        background-color: @dialog_bg_color;
+        color: @dialog_fg_color;
+    }
+
+    alertdialog .titlebar {
+        background-color: @headerbar_bg_color;
+        color: @headerbar_fg_color;
+    }
+
+    alertdialog box {
+        background-color: @dialog_bg_color;
+    }
+
+    alertdialog label {
+        color: @dialog_fg_color;
+    }
+
+    filechooser .dialog-action-box {
+        border-top: 1px solid @bright_black;
+    }
+
+    filechooser .dialog-action-box:backdrop {
+        border-top-color: @black;
+    }
+
+    filechooser #pathbarbox {
+        border-bottom: 1px solid @bright_black;
+    }
+
+    filechooserbutton:drop(active) {
+        box-shadow: none;
+        border-color: transparent;
+    }
+
+    toast {
+        background-color: @black;
+        color: @foreground;
+    }
+
+    toast button.circular.flat.image-button:hover {
+        color: @background;
+        background-color: @red;
+    }
+
+    .svg-icon {
+        filter: invert(79%) sepia(18%) saturate(611%) hue-rotate(192deg)
+            brightness(103%) contrast(94%);
+    }

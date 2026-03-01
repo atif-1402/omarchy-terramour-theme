@@ -1,0 +1,57 @@
+# ─────────────────────────────
+# btop Theme — Terramour
+# Cozy • Clean • Moody
+# ─────────────────────────────
+
+theme[main_bg]="#3b2f31"
+theme[main_fg]="#eadddd"
+
+theme[title]="#7fa68f"
+theme[hi_fg]="#7fa68f"
+
+theme[selected_bg]="#8f7f80"
+theme[selected_fg]="#3b2f31"
+
+theme[inactive_fg]="#8f7f80"
+theme[proc_misc]="#7fa68f"
+
+# All boxes unified
+theme[cpu_box]="#8f7f80"
+theme[mem_box]="#8f7f80"
+theme[net_box]="#8f7f80"
+theme[proc_box]="#8f7f80"
+theme[div_line]="#8f7f80"
+
+# ───── Simplified Gradients ─────
+
+theme[temp_start]="#7fa68f"
+theme[temp_mid]="#7fa68f"
+theme[temp_end]="#d07a7a"
+
+theme[cpu_start]="#7fa68f"
+theme[cpu_mid]="#7fa68f"
+theme[cpu_end]="#7fa68f"
+
+theme[free_start]="#8f7f80"
+theme[free_mid]="#7fa68f"
+theme[free_end]="#7fa68f"
+
+theme[cached_start]="#8f7f80"
+theme[cached_mid]="#8f7f80"
+theme[cached_end]="#8f7f80"
+
+theme[available_start]="#7fa68f"
+theme[available_mid]="#7fa68f"
+theme[available_end]="#7fa68f"
+
+theme[used_start]="#7fa68f"
+theme[used_mid]="#7fa68f"
+theme[used_end]="#d07a7a"
+
+theme[download_start]="#7fa68f"
+theme[download_mid]="#7fa68f"
+theme[download_end]="#8f7f80"
+
+theme[upload_start]="#7fa68f"
+theme[upload_mid]="#7fa68f"
+theme[upload_end]="#8f7f80"
